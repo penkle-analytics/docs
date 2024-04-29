@@ -9,6 +9,17 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Penkle Analytics Docs",
+      head: [
+        {
+          tag: "script",
+          attrs: {
+            src: "https://penkle.com/scripts/penkle.min.js",
+            "data-domain": "docs.penkle.com",
+            defer: true,
+            async: true,
+          },
+        },
+      ],
       defaultLocale: "en",
       locales: {
         en: {
