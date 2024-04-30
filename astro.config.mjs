@@ -48,7 +48,17 @@ export default defineConfig({
               label: "How to know if it's working",
               link: "/how-to-know-if-its-working",
             },
+            {
+              label: "Configuring the script",
+              link: "/configuring-script",
+            },
           ],
+        },
+        {
+          label: "API Reference",
+          autogenerate: {
+            directory: "references",
+          },
         },
       ],
     }),
